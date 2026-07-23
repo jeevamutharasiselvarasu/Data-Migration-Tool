@@ -1,0 +1,26 @@
+# Local secrets — never commit
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Runtime artifacts (regenerated per run)
+output/*
+audit/*
+cutover/*
+quarantine/*
+!output/.gitkeep
+!audit/.gitkeep
+!cutover/.gitkeep
+!quarantine/.gitkeep
+
+.DS_Store
+
+# Office temp/lock files
+~$*
+.venv/
+.deepeval/
+.ipynb_checkpoints/

@@ -1,0 +1,9 @@
+AccountNumber,HouseholdID,ClientID,ClientFirstName,ClientLastName,AccountType,ModelCode,ModelName,ModelType,InceptionDate,WaveNumber
+AMP-4001,HH002,CLT004,Mei,Liu,BROK,MDL_REP_B,Patel Income & Growth,REP,2024-01-05,7
+AMP-4002,HH003,CLT006,Priya,Patel,401K,MDL_REP_A,Harrington Core Equity,REP,2024-01-18,7
+AMP-4003,HH004,CLT008,Alice,Thornberry,IRA,MDL_CONS,Conservative Balanced,FIRM,2024-02-02,7
+AMP-4004,HH005,CLT010,Karen,Sullivan,JTWROS,MDL_AGG,Aggressive Growth,FIRM,2024-02-20,7
+AMP-4005,HH006,CLT011,Chidi,Okafor,ROTH,MDL_MOD,Moderate Growth,FIRM,2024-03-11,7
+AMP-4006,HH009,CLT013,Carlos,Fernandez,TRUST,MDL_INCOME,Income Focus,FIRM,2024-03-27,7
+AMP-4007,HH010,CLT015,Ben,Goldstein,BROK,MDL_REP_D,Kim Global Diversified,REP,2024-04-09,7
+AMP-4008,HH001,CLT001,Robert,Anderson,401K,MDL_MOD,Moderate Growth,FIRM,2024-04-30,7

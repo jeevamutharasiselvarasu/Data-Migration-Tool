@@ -1,0 +1,9 @@
+RepCode,RepName,Email,Phone,Region,Title,HireDate,Status
+REP001,James Harrington,james.harrington@advisoryfirm.com,555-010-1001,Northeast,Senior Advisor,2011-03-01,ACTIVE
+REP002,Lisa Patel,lisa.patel@advisoryfirm.com,555-010-1002,Northeast,Advisor,2014-06-15,ACTIVE
+REP003,Marcus Webb,marcus.webb@advisoryfirm.com,555-010-1003,West,Senior Advisor,2009-01-10,ACTIVE
+REP004,Sarah Thornton,sarah.thornton@advisoryfirm.com,555-010-1004,West,Advisor,2016-09-22,ACTIVE
+REP005,David Kim,david.kim@advisoryfirm.com,555-010-1005,South,Senior Advisor,2012-11-05,ACTIVE
+REP006,Nicole Russo,nicole.russo@advisoryfirm.com,555-010-1006,South,Advisor,2018-02-14,ACTIVE
+REP007,Priya Anand,priya.anand@advisoryfirm.com,555-010-1007,Midwest,Associate Advisor,2021-07-19,ACTIVE
+REP008,Tom Whitfield,tom.whitfield@advisoryfirm.com,555-010-1008,Midwest,Advisor,2015-04-03,ON_LEAVE

@@ -1,0 +1,8 @@
+streamlit>=1.30
+pandas>=2.0
+openpyxl>=3.1
+
+# Optional — only needed to turn on the Claude reasoning layer (explanations
+# and mapping suggestions). The app runs fully offline without it; the local
+# learning memory does not require it. Uncomment, then set ANTHROPIC_API_KEY.
+# anthropic>=0.40

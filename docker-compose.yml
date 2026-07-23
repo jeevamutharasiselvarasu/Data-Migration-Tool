@@ -1,0 +1,26 @@
+services:
+  migration-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      # Source files, audit trail, load/cutover/quarantine artifacts, and the
+      # learning memory persist on the host across container rebuilds/restarts.
+      - ./source:/app/source
+      - ./output:/app/output
+      - ./audit:/app/audit
+      - ./cutover:/app/cutover
+      - ./quarantine:/app/quarantine
+      - ./core_models_registry.json:/app/core_models_registry.json
+      - ./knowledge_store.json:/app/knowledge_store.json
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+      # Optional Claude reasoning layer. Compose auto-reads the .env file in
+      # this folder; if ANTHROPIC_API_KEY isn't set there, this resolves to an
+      # empty string and the app simply stays offline (no error). Copy
+      # .env.example to .env and add your key to turn it on. Also needs the
+      # 'anthropic' package (uncomment it in requirements.txt).
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - MIGRATION_LLM_MODEL=${MIGRATION_LLM_MODEL:-claude-sonnet-5}
+    restart: unless-stopped

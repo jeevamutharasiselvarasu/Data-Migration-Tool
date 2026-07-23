@@ -1,0 +1,9 @@
+HouseholdID,HouseholdName,PrimaryClientID,PrimaryClientName,NumClients,TotalAUM,RepCode,Custodian,Status,OnboardedDate,ClientID,ClientFirstName,ClientLastName,AccountNumber,AccountType,ModelCode,ModelName,ModelType,AUM,InceptionDate,DriftThreshold,WaveNumber
+HH030,Bennett Family,CLT030,Laura Bennett,1,612000.0,REP002,SCHW,ACTIVE,2024-05-01,CLT030,Laura,Bennett,AMP-5001,IRA,MDL_CONS,Conservative Balanced,FIRM,612000.0,2024-05-01,5.0,8
+HH030,Bennett Family,CLT030,Laura Bennett,1,612000.0,REP002,SCHW,ACTIVE,2024-05-01,CLT030,Laura,Bennett,AMP-5002,BROK,MDL_MOD,Moderate Growth,FIRM,198000.0,2024-06-15,5.0,8
+HH031,Castillo Household,CLT031,Diego Castillo,1,340500.0,REP004,SCHW,ACTIVE,2024-05-03,CLT031,Diego,Castillo,AMP-5003,ROTH,MDL_AGG,Aggressive Growth,FIRM,340500.0,2024-05-03,3.0,8
+HH032,Nguyen Trust,CLT032,Anh Nguyen,1,725300.0,REP005,SCHW,ACTIVE,2024-05-06,CLT032,Anh,Nguyen,AMP-5004,TRUST,MDL_INCOME,Income Focus,FIRM,725300.0,2024-05-06,7.5,8
+HH033,O'Brien Family,CLT033,Sean O'Brien,1,480900.0,REP001,SCHW,ACTIVE,2024-05-09,CLT033,Sean,O'Brien,AMP-5005,401K,MDL_MOD,Moderate Growth,FIRM,310900.0,2024-05-09,5.0,8
+HH033,O'Brien Family,CLT033,Sean O'Brien,1,480900.0,REP001,SCHW,ACTIVE,2024-05-09,CLT033,Sean,O'Brien,AMP-5006,JTWROS,MDL_REP_A,Harrington Core Equity,REP,170000.0,2024-07-01,5.0,8
+HH034,Delacroix Household,CLT034,Renee Delacroix,1,289400.0,REP006,SCHW,ACTIVE,2024-05-12,CLT034,Renee,Delacroix,AMP-5007,IRA,MDL_CONS,Conservative Balanced,FIRM,289400.0,2024-05-12,3.0,8
+HH035,Park Family,CLT035,Jin Park,1,512750.0,REP003,SCHW,ACTIVE,2024-05-15,CLT035,Jin,Park,AMP-5008,BROK,MDL_AGG,Aggressive Growth,FIRM,512750.0,2024-05-15,3.0,8

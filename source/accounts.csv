@@ -1,0 +1,41 @@
+HouseholdID,HouseholdName,ClientID,ClientFirstName,ClientLastName,AccountNumber,AccountType,ModelCode,ModelName,ModelType,AUM,Custodian,RepCode,AdvisorName,InceptionDate,DriftThreshold,WaveNumber
+HH001,Anderson Family,CLT001,Robert,Anderson,AMP-1001,IRA,MDL_CONS,Conservative Balanced,FIRM,1866798.72,SCHW,REP001,James Harrington,2013-04-05,3.0,1
+HH001,Anderson Family,CLT001,Robert,Anderson,AMP-1002,JTWROS,MDL_MOD,Moderate Growth,FIRM,1496706.66,SCHW,REP001,James Harrington,2010-01-03,5.0,1
+HH001,Anderson Family,CLT001,Robert,Anderson,AMP-1003,ROTH,MDL_CONS,Conservative Balanced,FIRM,1425050.4,SCHW,REP001,James Harrington,2021-11-23,10.0,1
+HH001,Anderson Family,CLT002,Susan,Anderson,AMP-1004,401K,MDL_REP_A,Harrington Core Equity,REP,2033104.62,SCHW,REP002,Lisa Patel,2010-03-23,10.0,1
+HH002,Chen-Liu Household,CLT003,Wei,Chen,AMP-1005,BROK,MDL_AGG,Aggressive Growth,FIRM,577518.72,SCHW,REP003,Marcus Webb,2022-06-04,3.0,1
+HH002,Chen-Liu Household,CLT003,Wei,Chen,AMP-1006,401K,MDL_MOD,Moderate Growth,FIRM,929499.48,SCHW,REP003,Marcus Webb,2015-10-09,3.0,1
+HH002,Chen-Liu Household,CLT004,Mei,Liu,AMP-1007,401K,MDL_MOD,Moderate Growth,FIRM,2434133.62,SCHW,REP004,Sarah Thornton,2016-02-18,7.5,1
+HH002,Chen-Liu Household,CLT004,Mei,Liu,AMP-1008,JTWROS,MDL_REP_B,Patel Income & Growth,REP,1464512.76,SCHW,REP004,Sarah Thornton,2021-02-02,5.0,1
+HH002,Chen-Liu Household,CLT004,Mei,Liu,AMP-1009,BROK,MDL_MOD,Moderate Growth,FIRM,2145528.42,SCHW,REP004,Sarah Thornton,2011-07-09,10.0,1
+HH003,Patel Trust,CLT005,Rajesh,Patel,AMP-1010,BROK,MDL_AGG,Aggressive Growth,FIRM,956943.37,SCHW,REP005,David Kim,2013-11-09,3.0,1
+HH003,Patel Trust,CLT005,Rajesh,Patel,AMP-1011,TRUST,MDL_AGG,Aggressive Growth,FIRM,1358642.7,SCHW,REP005,David Kim,2013-03-15,10.0,1
+HH003,Patel Trust,CLT005,Rajesh,Patel,AMP-1012,BROK,MDL_INCOME,Income Focus,FIRM,1727304.91,SCHW,REP005,David Kim,2022-01-08,3.0,1
+HH003,Patel Trust,CLT006,Priya,Patel,AMP-1013,401K,MDL_REP_A,Harrington Core Equity,REP,212162.08,SCHW,REP006,Nicole Russo,2019-12-11,5.0,2
+HH003,Patel Trust,CLT006,Priya,Patel,AMP-1014,JTWROS,MDL_REP_D,Kim Global Diversified,REP,1019298.16,SCHW,REP006,Nicole Russo,2020-08-05,7.5,2
+HH004,Thornberry Group,CLT007,Thomas,Thornberry,AMP-1015,ROTH,MDL_REP_A,Harrington Core Equity,REP,1880183.84,SCHW,REP001,James Harrington,2016-10-13,7.5,2
+HH004,Thornberry Group,CLT008,Alice,Thornberry,AMP-1016,ROTH,MDL_REP_D,Kim Global Diversified,REP,272728.06,SCHW,REP002,Lisa Patel,2010-02-05,5.0,2
+HH005,Sullivan Family,CLT009,Patrick,Sullivan,AMP-1017,401K,MDL_MOD,Moderate Growth,FIRM,992679.91,SCHW,REP003,Marcus Webb,2019-08-17,7.5,2
+HH005,Sullivan Family,CLT009,Patrick,Sullivan,AMP-1018,TRUST,MDL_CONS,Conservative Balanced,FIRM,1716694.36,SCHW,REP003,Marcus Webb,2011-11-18,7.5,2
+HH005,Sullivan Family,CLT009,Patrick,Sullivan,AMP-1019,JTWROS,MDL_REP_B,Patel Income & Growth,REP,323302.83,SCHW,REP003,Marcus Webb,2016-03-15,3.0,2
+HH005,Sullivan Family,CLT010,Karen,Sullivan,AMP-1020,JTWROS,MDL_REP_A,Harrington Core Equity,REP,2431125.84,SCHW,REP004,Sarah Thornton,2022-03-17,3.0,2
+HH005,Sullivan Family,CLT010,Karen,Sullivan,AMP-1021,JTWROS,MDL_REP_A,Harrington Core Equity,REP,2112089.9,SCHW,REP004,Sarah Thornton,2018-10-07,5.0,2
+HH005,Sullivan Family,CLT010,Karen,Sullivan,AMP-1022,BROK,MDL_AGG,Aggressive Growth,FIRM,1371478.62,SCHW,REP004,Sarah Thornton,2022-09-01,7.5,2
+HH006,Okafor Household,CLT011,Chidi,Okafor,AMP-1023,IRA,MDL_MOD,Moderate Growth,FIRM,2326291.61,SCHW,REP005,David Kim,2022-05-08,3.0,3
+HH006,Okafor Household,CLT011,Chidi,Okafor,AMP-1024,ROTH,MDL_MOD,Moderate Growth,FIRM,259850.96,SCHW,REP005,David Kim,2017-02-25,5.0,3
+HH008,Nakamura Family,CLT012,Yuki,Nakamura,AMP-1025,JTWROS,MDL_REP_D,Kim Global Diversified,REP,2369779.27,SCHW,REP006,Nicole Russo,2012-05-17,10.0,3
+HH009,Fernandez Group,CLT013,Carlos,Fernandez,AMP-1026,TRUST,MDL_INCOME,Income Focus,FIRM,1796724.98,SCHW,REP001,James Harrington,2016-11-21,7.5,3
+HH010,Goldstein Household,CLT014,Rachel,Goldstein,AMP-1027,TRUST,MDL_REP_D,Kim Global Diversified,REP,346460.28,SCHW,REP002,Lisa Patel,2013-02-11,3.0,3
+HH010,Goldstein Household,CLT014,Rachel,Goldstein,AMP-1028,TRUST,MDL_INCOME,Income Focus,FIRM,1491678.28,SCHW,REP002,Lisa Patel,2010-02-23,3.0,3
+HH010,Goldstein Household,CLT015,Ben,Goldstein,AMP-1029,IRA,MDL_CONS,Conservative Balanced,FIRM,2156106.73,SCHW,REP003,Marcus Webb,2011-09-08,7.5,3
+HH006,Okafor Household,CLT011,Chidi,Okafor,AMP-1030,SEP,MDL_MOD,Moderate Growth,FIRM,500000,SCHW,REP005,David Kim,2021-01-01,5.0,4
+HH999,Ghost Household,CLT099,Jordan,Blake,AMP-1031,IRA,MDL_CONS,Conservative Balanced,FIRM,450000,SCHW,REP001,James Harrington,2022-02-02,5.0,4
+HH008,Nakamura Family,CLT012,Yuki,Nakamura,AMP-1032,BROK,MDL_REP_C,Webb Tactical Allocation,REP,610000,SCHW,REP006,Nicole Russo,2023-03-03,5.0,4
+HH008,Nakamura Family,CLT012,Yuki,Nakamura,AMP-1032,BROK,MDL_REP_C,Webb Tactical Allocation,REP,610000,SCHW,REP006,Nicole Russo,2023-03-03,5.0,4
+HH009,Fernandez Group,CLT013,Carlos,Fernandez,AMP-1033,TRUST,MDL_CONS,Conservative Balanced,FIRM,-75000,SCHW,REP001,James Harrington,2020-04-04,5.0,4
+HH010,Goldstein Household,CLT014,Rachel,Goldstein,AMP-1034,IRA,MDL_MOD,Moderate Growth,FIRM,TBD,SCHW,REP002,Lisa Patel,2021-05-05,5.0,4
+HH001,Anderson Family,,Robert,Anderson,AMP-1035,IRA,MDL_CONS,Conservative Balanced,FIRM,300000,SCHW,REP001,James Harrington,2022-06-06,5.0,4
+HH002,Chen-Liu Household,CLT003,Wei,Chen,AMP-1036,BROK,MDL_AGG,Aggressive Growth,FIRM,420000,MERRILL,REP003,Marcus Webb,2019-07-07,,4
+HH003,Patel Trust,CLT005,Rajesh,Patel,AMP-1037,IRA,MDL_3P_TACTICAL,Sentinel Tactical 3P,3P,890000,SCHW,REP005,David Kim,not-a-date,5.0,4
+HH004,Thornberry Group,CLT007,Thomas,Thornberry,AMP-1038,BROK,MDL_AGG,Aggressive Growth,FIRM,275000,SCHW,REP001,James Harrington,2020-08-08,5.0,4
+HH004,Thornberry Group,CLT008,Alice,Thornberry,AMP-1039,IRA,MDL_CONS,Conservative Balanced,FIRM,190000,SCHW,REP002,Lisa Patel,2021-09-09,5.0,4

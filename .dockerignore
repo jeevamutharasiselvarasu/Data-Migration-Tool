@@ -1,0 +1,17 @@
+.env
+__pycache__/
+*.pyc
+.git/
+.gitignore
+output/*
+audit/*
+cutover/*
+quarantine/*
+!output/.gitkeep
+!audit/.gitkeep
+!cutover/.gitkeep
+!quarantine/.gitkeep
+.streamlit/
+*.egg-info/
+.pytest_cache/
+.DS_Store

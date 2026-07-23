@@ -1,0 +1,11 @@
+AccountNumber,HouseholdID,ClientID,ClientFirstName,ClientLastName,AccountType,ModelCode,ModelName,ModelType,InceptionDate,WaveNumber
+AMP-3001,HH001,CLT001,Robert,Anderson,BROK,MDL_MOD,Moderate Growth,FIRM,2023-01-10,6
+AMP-3002,HH002,CLT003,Wei,Chen,IRA,MDL_AGG,Aggressive Growth,FIRM,2023-02-14,6
+AMP-3003,HH003,CLT005,Rajesh,Patel,ROTH,MDL_CONS,Conservative Balanced,FIRM,2023-03-08,6
+AMP-3004,HH004,CLT007,Thomas,Thornberry,TRUST,MDL_REP_A,Harrington Core Equity,REP,2023-04-19,6
+AMP-3005,HH005,CLT009,Patrick,Sullivan,401K,MDL_MOD,Moderate Growth,FIRM,2023-05-22,6
+AMP-3006,HH006,CLT011,Chidi,Okafor,JTWROS,MDL_AGG,Aggressive Growth,FIRM,2023-06-30,6
+AMP-3007,HH008,CLT012,Yuki,Nakamura,IRA,MDL_INCOME,Income Focus,FIRM,2023-07-11,6
+AMP-3008,HH009,CLT013,Carlos,Fernandez,BROK,MDL_REP_D,Kim Global Diversified,REP,2023-08-25,6
+AMP-3009,HH010,CLT014,Rachel,Goldstein,ROTH,MDL_MOD,Moderate Growth,FIRM,2023-09-14,6
+AMP-3010,HH001,CLT002,Susan,Anderson,TRUST,MDL_CONS,Conservative Balanced,FIRM,2023-10-02,6
