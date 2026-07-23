@@ -1,5 +1,5 @@
 """8. Cutover Agent — promotes the just-loaded batch from staging to
-production, records which keys were cut over, and notes that Amplify-side
+production, records which keys were cut over, and notes that source-side
 rebalancing/write-back is disabled for those records. In this prototype
 "production" is a JSON cutover record rather than a live trading system."""
 
@@ -27,7 +27,7 @@ class CutoverAgent:
             "status": "PRODUCTION",
             "promoted_key_field": loaded_key,
             "promoted_keys": keys,
-            "note": "Amplify-side rebalancing/write-back disabled for these records (simulated cutover).",
+            "note": "Source-side rebalancing/write-back disabled for these records (simulated cutover).",
         }
         path = os.path.join(cutover_dir, f"cutover_{context.entity_key}_{timestamp}.json")
         with open(path, "w") as f:

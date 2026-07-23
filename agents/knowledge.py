@@ -8,7 +8,7 @@ import pipeline as pl
 # Mapping Rule Catalog — versioned per entity via pipeline.ENTITY_CONFIGS.
 FIELD_MAPS = {key: config["field_map"] for key, config in pl.ENTITY_CONFIGS.items()}
 
-# Code crosswalks (Amplify -> Orion Eclipse), per field_glossary.md.
+# Code crosswalks (source -> destination), per field_glossary.md.
 CODE_CROSSWALKS = {
     "account_type": pl.ACCOUNT_TYPE_MAP,
     "model_type": pl.MODEL_TYPE_MAP,

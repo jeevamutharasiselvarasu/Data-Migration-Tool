@@ -1,7 +1,7 @@
-# Data Migration Tool — Amplify → Orion Eclipse
+# Data Migration Tool
 
 A local, agentic **data-migration pipeline** with a guided Streamlit UI. It moves wealth-management
-data from Amplify (Rep-as-PM) source extracts into an Orion Eclipse–shaped destination the way a
+data from source extracts into a destination-shaped schema the way a
 real migration wave would — extract, map, transform, validate, human-approve, load, reconcile, and
 audit — entirely on your machine so you can rehearse and inspect every step before touching
 production data.

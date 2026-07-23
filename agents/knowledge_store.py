@@ -9,7 +9,7 @@ It learns three things, each with clear provenance:
      Compliance Validator stops flagging it as UNKNOWN_CUSTODIAN_CODE next
      time.
   2. Account-type crosswalk entries — *explicitly taught* by the user in the
-     Map step (raw Amplify code -> normalized Orion value). The Compliance
+     Map step (raw source code -> normalized destination value). The Compliance
      Validator merges these over the built-in ACCOUNT_TYPE_MAP, so a code
      that was UNKNOWN becomes a real mapping on the next run.
   3. Confirmed column -> field mappings — auto-learned when a custom schema

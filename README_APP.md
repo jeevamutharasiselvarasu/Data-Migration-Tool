@@ -1,6 +1,6 @@
 # Migration Front End
 
-Web UI for the Amplify -> Orion Eclipse multi-agent migration pipeline (`pipeline.py` +
+Web UI for the multi-agent data migration pipeline (`pipeline.py` +
 `agents/`). An Orchestrator (Conductor) routes each batch through 9 specialist agents, gated by
 a human-in-the-loop review before anything loads. See the **"0. How to Use"** tab inside the app
 for a full walkthrough, glossary, and entity-relationship reference.

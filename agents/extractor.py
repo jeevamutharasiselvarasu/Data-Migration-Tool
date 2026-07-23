@@ -1,5 +1,5 @@
 """1. Extractor Agent — pulls a per-advisor-book snapshot from the source
-file (CSV / Excel / JSON), analogous to the diagram's Amplify connector pull."""
+file (CSV / Excel / JSON), analogous to the diagram's source connector pull."""
 
 import time
 

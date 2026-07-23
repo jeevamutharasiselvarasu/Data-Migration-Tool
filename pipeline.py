@@ -1,5 +1,5 @@
 """
-Agentic migration pipeline: Amplify accounts.csv -> Orion Eclipse.
+Agentic migration pipeline: source accounts.csv -> destination schema.
 
 Stages: Extract -> Map -> Transform -> Validate -> HITL -> Load -> Reconcile -> Audit.
 Business rules follow references/field_glossary.md, references/rep_as_pm_logic.md and
@@ -23,7 +23,7 @@ from datetime import datetime
 import pandas as pd
 
 # ---------------------------------------------------------------------------
-# Step 2 — Schema mapping (Amplify column -> Orion field), per field_glossary.md
+# Step 2 — Schema mapping (source column -> destination field), per field_glossary.md
 # ---------------------------------------------------------------------------
 
 FIELD_MAP = {
@@ -81,7 +81,7 @@ REQUIRED_FIELDS = ["household_id", "client_id", "account_number", "account_type"
 DEFAULT_DRIFT_TOLERANCE = 5.0
 
 # ---------------------------------------------------------------------------
-# Sleeve schema mapping (Amplify sleeves.csv -> Orion Eclipse account sleeves)
+# Sleeve schema mapping (source sleeves.csv -> destination account sleeves)
 # Per references/rep_as_pm_logic.md — sleeve allocations must sum to 100% per
 # account and zero-allocation sleeves are inactive (excluded in sleeve_math()).
 # ---------------------------------------------------------------------------
@@ -100,7 +100,7 @@ SLEEVE_FIELD_MAP = {
 }
 
 # ---------------------------------------------------------------------------
-# Household schema mapping (Amplify households.csv -> Orion Eclipse households)
+# Household schema mapping (source households.csv -> destination households)
 # ---------------------------------------------------------------------------
 
 HOUSEHOLD_FIELD_MAP = {
@@ -117,7 +117,7 @@ HOUSEHOLD_FIELD_MAP = {
 }
 
 # ---------------------------------------------------------------------------
-# Model schema mapping (Amplify models.csv -> Orion Eclipse Core Models)
+# Model schema mapping (source models.csv -> destination Core Models)
 # ---------------------------------------------------------------------------
 
 MODEL_FIELD_MAP = {
@@ -134,7 +134,7 @@ MODEL_FIELD_MAP = {
 }
 
 # ---------------------------------------------------------------------------
-# Transaction schema mapping (Amplify transactions.csv -> Orion Eclipse trade blotter)
+# Transaction schema mapping (source transactions.csv -> destination trade blotter)
 # ---------------------------------------------------------------------------
 
 TRANSACTION_FIELD_MAP = {
@@ -153,7 +153,7 @@ TRANSACTION_FIELD_MAP = {
 }
 
 # ---------------------------------------------------------------------------
-# Advisor schema mapping (Amplify advisors.csv -> Orion Eclipse advisor
+# Advisor schema mapping (source advisors.csv -> destination advisor
 # directory). This is a near 1:1 mapping -- almost every column is a plain
 # rename with no business-logic transformation, unlike accounts/sleeves.
 # Used as the "Scenario 1: one-to-one mapping" reference example.
@@ -750,7 +750,7 @@ def validate_compliance(df: pd.DataFrame, pending_model_registration: list[str],
     if pending_model_registration:
         errors.append({
             "rule": "PENDING_CORE_MODEL_REGISTRATION",
-            "detail": "Advisor-built (Rep-as-PM) models not yet registered as Core Models in Orion",
+            "detail": "Advisor-built (Rep-as-PM) models not yet registered as Core Models in the destination",
             "models": pending_model_registration,
             "severity": "WARNING",
         })
@@ -1009,7 +1009,7 @@ def run_pipeline(args) -> int:
 
 
 def parse_args(argv=None):
-    parser = argparse.ArgumentParser(description="Amplify -> Orion accounts migration pipeline")
+    parser = argparse.ArgumentParser(description="data migration pipeline")
     parser.add_argument("--source", default="source/accounts.csv", help="Path to source file (csv/xlsx/json)")
     parser.add_argument("--output-dir", default="output", help="Directory for migrated output files")
     parser.add_argument("--audit-dir", default="audit", help="Directory for audit/validation/reconciliation reports")

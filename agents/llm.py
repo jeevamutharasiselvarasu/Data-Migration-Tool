@@ -107,7 +107,7 @@ def explain_findings(entity_key: str, compliance_errors: list, dq_errors: list) 
     findings = {"compliance": compliance_errors, "data_quality": dq_errors}
     prompt = (
         "You are a data-migration reviewer for a wealth-management platform "
-        "(Amplify -> Orion Eclipse). A batch of "
+        "(source -> destination). A batch of "
         f"'{entity_key}' records produced these validation findings:\n\n"
         f"{json.dumps(findings, indent=2, default=str)}\n\n"
         "In under 180 words, plain language, no preamble: explain what these "

@@ -1,4 +1,4 @@
-"""7. Reconciler Agent — compares Orion post-load vs. Amplify source by
+"""7. Reconciler Agent — compares destination post-load vs. source by
 record count (key-set diff) and Total AUM. Tolerance: <= 0.5% AUM drift.
 A breach here is what the Rollback Path is triggered by."""
 

@@ -1,4 +1,4 @@
-# Amplify -> Orion Eclipse migration pipeline -- local prototype UI
+# Data Migration Tool -- local prototype UI
 #
 # Build:  docker compose up --build
 # Then open:  http://localhost:8501

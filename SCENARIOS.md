@@ -94,7 +94,7 @@ the multi-file combine feature: 45 combined rows (confirmed), each tagged with i
 
 ## Reference workbook
 
-`amplify_source_data.xlsx` was regenerated from the same final data and now has a **Scenario
+`sample_source_data.xlsx` was regenerated from the same final data and now has a **Scenario
 Guide** sheet (in addition to README) listing everything above in one place.
 
 ## A note on the `model_id` required-field check

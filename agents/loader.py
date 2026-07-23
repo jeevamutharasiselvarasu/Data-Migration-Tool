@@ -1,4 +1,4 @@
-"""6. Loader Agent — writes approved records to the Orion staging schema
+"""6. Loader Agent — writes approved records to the destination staging schema
 (here: output_dir) in dependency order, registering any newly-approved
 Core Models first. Idempotent per timestamp; resumable since each run
 produces a uniquely-named file."""

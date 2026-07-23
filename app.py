@@ -1,5 +1,5 @@
 """
-Front end for the multi-agent Amplify -> Orion Eclipse migration pipeline.
+Front end for the multi-agent data migration pipeline.
 
 Drives agents/orchestrator.py's OrchestratorAgent, which coordinates:
   1. Extractor Agent -> 2. Schema Mapper -> 3. Sleeve Math Agent ->
@@ -180,7 +180,7 @@ STATUS_COLORS = {
     "ROLLED_BACK": "#f8d7da",
 }
 
-st.set_page_config(page_title="Amplify -> Orion Migration", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Data Migration Tool", layout="wide", initial_sidebar_state="expanded")
 
 
 def get_store() -> KnowledgeStore:
@@ -276,7 +276,7 @@ ctx_now = st.session_state.get("context")
 store = get_store()
 
 with st.sidebar:
-    st.markdown("### Amplify → Orion")
+    st.markdown("### source → destination")
     st.caption("Multi-agent migration pipeline")
 
     st.radio(
@@ -319,7 +319,7 @@ with st.sidebar:
 
 
 # ---- Main header: compact title + always-on stage stepper + activity log ----
-st.title("Amplify → Orion Eclipse Migration")
+st.title("Data Migration Tool")
 render_stage_stepper(ctx_now)
 
 with st.expander("🔎 Agent activity log — what each agent did on this batch", expanded=False):
@@ -339,8 +339,8 @@ if page == PAGE_HOWTO:
     st.subheader("How this platform works")
     st.markdown(
         """
-This is a local prototype of an **agentic migration pipeline**: it moves data from Amplify
-(Rep-as-PM) source extracts into an Orion Eclipse-shaped destination, the same way a real
+This is a local prototype of an **agentic migration pipeline**: it moves data from a source system
+source extracts into a destination-shaped schema, the same way a real
 migration wave would, but entirely on your machine so you can see every step and rehearse
 scenarios before touching production data.
 
@@ -507,7 +507,7 @@ if page == PAGE_UPLOAD:
         """
 **Instructions**
 
-1. Export the source extract from Amplify as **CSV, Excel (.xlsx), or JSON**.
+1. Export the source extract as **CSV, Excel (.xlsx), or JSON**.
 2. Pick the **entity type** below.
 3. Upload one file, or several — if several, choose how they combine (see
    **Combine mode** below once 2+ files are staged). The **Orchestrator**
@@ -957,7 +957,7 @@ if page == PAGE_MAP:
             hide_index=True,
             column_config={
                 "Source Column": st.column_config.TextColumn(disabled=True),
-                "Destination Field": st.column_config.TextColumn(help="Destination field name in Orion Eclipse"),
+                "Destination Field": st.column_config.TextColumn(help="Destination field name"),
                 "Include": st.column_config.CheckboxColumn(help="Include this column in the mapping"),
             },
             key=editor_key,
@@ -1015,7 +1015,7 @@ if page == PAGE_MAP:
                 with st.container(border=True):
                     st.markdown("**🧠 Teach an account-type rule**")
                     st.caption(
-                        f"These raw codes aren't in the crosswalk yet: {raw_unknown}. Teach the normalized Orion "
+                        f"These raw codes aren't in the crosswalk yet: {raw_unknown}. Teach the normalized destination "
                         "value and the Compliance Validator will apply it automatically on every future run."
                     )
                     tc1, tc2, tc3 = st.columns([1, 1, 1])
@@ -1037,13 +1037,13 @@ if page == PAGE_MAP:
         r1, r2, r3 = st.columns(3)
         with r1:
             st.markdown("**Account Type**")
-            st.dataframe(pd.DataFrame(pl.ACCOUNT_TYPE_MAP.items(), columns=["Amplify", "Orion"]), use_container_width=True)
+            st.dataframe(pd.DataFrame(pl.ACCOUNT_TYPE_MAP.items(), columns=["the source system", "the destination"]), use_container_width=True)
         with r2:
             st.markdown("**Model Type**")
-            st.dataframe(pd.DataFrame(pl.MODEL_TYPE_MAP.items(), columns=["Amplify", "Orion"]), use_container_width=True)
+            st.dataframe(pd.DataFrame(pl.MODEL_TYPE_MAP.items(), columns=["the source system", "the destination"]), use_container_width=True)
         with r3:
             st.markdown("**Asset Class**")
-            st.dataframe(pd.DataFrame(pl.ASSET_CLASS_MAP.items(), columns=["Amplify", "Orion"]), use_container_width=True)
+            st.dataframe(pd.DataFrame(pl.ASSET_CLASS_MAP.items(), columns=["the source system", "the destination"]), use_container_width=True)
         st.markdown("**Known Custodian Codes**")
         st.write(sorted(pl.KNOWN_CUSTODIAN_CODES))
 
@@ -1368,7 +1368,7 @@ if page == PAGE_MEMORY:
         st.caption("Nothing yet — approve a batch containing a new custodian code to teach one.")
 
     st.markdown("#### Taught account-type rules")
-    st.caption("Explicitly taught on the Map step (raw Amplify code → normalized Orion value). Merged over the built-in crosswalk on the next run.")
+    st.caption("Explicitly taught on the Map step (raw source code → normalized destination value). Merged over the built-in crosswalk on the next run.")
     if store.data["account_types"]:
         st.dataframe(
             pd.DataFrame(

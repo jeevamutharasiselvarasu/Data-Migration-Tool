@@ -1,6 +1,6 @@
 """
 Multi-agent implementation of the Agentic Migration Pipeline
-(Amplify Rep-as-PM -> Orion Eclipse), mirroring the architecture diagram:
+(source -> destination), mirroring the architecture diagram:
 
   Orchestrator (Conductor)
     1. Extractor Agent
